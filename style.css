@@ -1,0 +1,212 @@
+*{                              /* this is a reset; applies to whole page */
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #f4f4f4;
+    color: #555
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;          /* boldness; can also specify with a number */
+            /* same as above --> font: normal 16px Arial, Helvetica, sans-serif; */
+    line-height: 1.6em;         /* determines line spacing; can use em or px, not working tho */
+    margin:0;                   /* determines left margin */
+}
+
+.container{
+    width:80%;                /* determines width of textspace; can set by px but that is not responsive */
+    margin:auto;                /* sets an even amount of margin on all sides (centers) */
+}
+
+.button{                        /* universal button class; could've also done .my-form input[type="submit"]{ */ 
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover{
+    background-color: red;
+    color: white;
+}
+
+a{
+    text-decoration: none;      /* this gets rid of links' underline (a for anchor) */
+    color: #000;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+
+.clr{                           /* Indicates which sides of an element's box(es) may not be adjacent to an earlier floating box; resets */
+    clear:both;
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff;
+
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    border: 5px red solid;
+    /* as you can see, you can target individual parameters of a group; each line will be overwritten by the next */
+
+    padding: 20px;      /* an h1 has padding by default */
+
+    margin:20px 0;      /* 20px margins for top/bottom, 0px for left/right */
+}
+
+.box-1 h1{              /* won't style any h1 outside of this .box-1 class */
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.4em;
+    padding-bottom: 15px;
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.box-2 p{
+    padding: 15px 0;
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;        /* rounds borders */
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: none;         /* changes the bullet point style: none, square, etc */
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url(/csscheatsheet/img/check.png)     /* use images */
+}
+
+.my-form{
+    padding: 20px;              /* creates padding between categories and form, and form and footer */
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;       /* creates padding within the form */
+}
+
+.my-form label{
+    display: block;             /* block elements will put the textboxes on a new line */
+}
+
+.my-form input[type="text"], .my-form textarea{    /* square brackets omit submit button */
+    padding: 8px;
+    width: 100%                 /* text box width is 100% of its container */
+}
+
+.block{
+    float: left;                 /* The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it */
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;     /* takes in padding + border and applies it to the width value instead of adding to it */
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 100%;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 30px 0;
+    position: relative;         /* the p-box will be placed in a relative position on the page; the text is then placed absolutely within the relative box at any position */
+    background-image: url(img/bgimage.jpeg);
+    background-repeat: no-repeat;
+    background-position: 100px 200px;   /* two ways to center background image */
+    background-position: center top;
+
+}
+
+.p-box h1{                      /* without a parent element that is positioned relative, this would go to the top of the html doc */
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 60px;
+    right: 150px;
+}
+
+.fix-me{                        /* this makes the button fixed on the page no matter where you scroll */
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background: red;          /* can use color or image without specifying */
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+.my-list li:nth-child(even){
+    background: grey;
+}
+
+
+.my-list li:last-child{         /* overrides nth-child(even) */
+    background: blue;
+}
+
+/*                              coloring methods
+body{
+    color: red                  color names
+    background: coral           html5 color names
+}
+
+h1{
+    color: #00ff00              hexadecimal
+}
+
+p{
+    color: rgb(0,0,255);        RGB
+}
+
+*/

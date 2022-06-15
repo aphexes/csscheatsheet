@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--
+    <style type="text/css">
+    h1{
+        color:blue
+    }
+    </style> 
+    this is internal CSS, slightly less preferred than external
+    -->
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <!-- think of ids as unique elements; we might reuse styling from box-1 later, so we use class instead of id -->
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dapibus mi, eu elementum neque porta in. Nullam nulla magna, fringilla ac libero in, pulvinar iaculis nunc. Quisque iaculis mauris vel lectus ornare, ac maximus mi lobortis. Donec convallis et augue nec dapibus. In vitae eleifend dui, eu vulputate lacus. Phasellus commodo volutpat elementum. Vivamus vitae tortor vestibulum, consectetur nulla vel, aliquam dolor. Pellentesque mi mi, pharetra a maximus ut, interdum at diam. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lectus nisl, bibendum ut ipsum ut, blandit convallis dui. Aenean ultricies purus et lacus venenatis, quis fermentum ligula elementum. Integer quis justo ipsum. Nam commodo posuere nisl, id imperdiet tortor porttitor a. Suspendisse lobortis, tortor id ultrices fringilla, nisi turpis pellentesque orci, nec tincidunt urna neque quis arcu. Quisque vel mi euismod, hendrerit libero id, porta neque. Etiam ut orci ligula. Nam sit amet viverra tortor. Vivamus orci mauris, lacinia at placerat pretium, porttitor ut elit. Donec in lorem augue. Fusce id lorem non risus porttitor efficitur. Donec lacinia sem sodales nibh faucibus ornare. Nullam ultrices bibendum turpis ut tincidunt. Donec vel finibus eros, vel auctor dui.</p>
+            <!-- <h1 style="color:red">Hello World</h1> inline CSS - BAD PRACTICE! should instead separate presentation from styling -->
+        </div>
+
+        <div class="box-2">
+            <h1>Goodbye World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dapibus mi, eu elementum neque porta in. Nullam nulla magna, fringilla ac libero in, pulvinar iaculis nunc. Quisque iaculis mauris vel lectus ornare, ac maximus mi lobortis. Donec convallis et augue nec dapibus. In vitae eleifend dui, eu vulputate lacus. Phasellus commodo volutpat elementum. Vivamus vitae tortor vestibulum, consectetur nulla vel, aliquam dolor. Pellentesque mi mi, pharetra a maximus ut, interdum at diam. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lectus nisl, bibendum ut ipsum ut, blandit convallis dui. Aenean ultricies purus et lacus venenatis, quis fermentum ligula elementum. Integer quis justo ipsum. Nam commodo posuere nisl, id imperdiet tortor porttitor a. Suspendisse lobortis, tortor id ultrices fringilla, nisi turpis pellentesque orci, nec tincidunt urna neque quis arcu. Quisque vel mi euismod, hendrerit libero id, porta neque. Etiam ut orci ligula. Nam sit amet viverra tortor. Vivamus orci mauris, lacinia at placerat pretium, porttitor ut elit. Donec in lorem augue. Fusce id lorem non risus porttitor efficitur. Donec lacinia sem sodales nibh faucibus ornare. Nullam ultrices bibendum turpis ut tincidunt. Donec vel finibus eros, vel auctor dui.</p>
+            <a class="button" href="">Read More</a>
+        </div>
+
+        <div class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <li><a href="#">Category 4</a></li>
+                <li><a href="test.html">Category 5</a></li>
+            </ul>
+        </div>
+
+        <form class="my-form">
+            <div class="form-group">
+                <label>Name: </label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label>Email: </label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label>Message: </label>
+                <textarea name="message"></textarea>    <!-- textarea is resizeable, more than one line -->
+            </div>
+            <input class="button" type="submit" value="Submit" name="">
+        </form>
+
+        <div class="block">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dapibus mi, eu elementum neque porta in. Nullam nulla magna, fringilla ac libero in, pulvinar iaculis nunc.</p>
+        </div>
+        <div class="block">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dapibus mi, eu elementum neque porta in. Nullam nulla magna, fringilla ac libero in, pulvinar iaculis nunc.</p>
+        </div>
+        <div class="block">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dapibus mi, eu elementum neque porta in. Nullam nulla magna, fringilla ac libero in, pulvinar iaculis nunc.</p>
+        </div>
+
+        <div class="clr"></div>
+
+        <div id="main-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dapibus mi, eu elementum neque porta in. Nullam nulla magna, fringilla ac libero in, pulvinar iaculis nunc. Quisque iaculis mauris vel lectus ornare, ac maximus mi lobortis. Donec convallis et augue nec dapibus. In vitae eleifend dui, eu vulputate lacus. Phasellus commodo volutpat elementum. Vivamus vitae tortor vestibulum, consectetur nulla vel, aliquam dolor.</p>
+        </div>
+
+        <div id="sidebar">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dapibus mi, eu elementum neque porta in. Nullam nulla magna, fringilla ac libero in, pulvinar iaculis nunc.</p>
+        </div>
+
+        <div class="clr"></div>
+
+        <div class="p-box">
+            <h1>Hello</h1>
+            <h2>Goodbye</h2>
+        </div>
+
+        <ul class="my-list">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+    </div><!-- ./container -->
+
+    <a class="fix-me button" href="">Hello</a>
+
+    <div style="margin-top:500px;"></div>
+</body>
+</html>
